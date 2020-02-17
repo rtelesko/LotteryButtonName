@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (TextUtils.isEmpty(etName.getText().toString()))
                     Toast.makeText(getApplicationContext(), "Please enter a name!", Toast.LENGTH_SHORT).show();
-                else tvName.setText("Hello " + etName.getText());
+                else tvName.setText("Hello " + etName.getText().toString());
             }
         });
 
